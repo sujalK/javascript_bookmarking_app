@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>BookMarking Application</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <img src="./open-book.svg" alt="" style="width: 100px;">
+      <h2 class="bookmark-title">Bookmark your favourite site</h2>
+      <form id="header-form">
+        <div class="inp-group">
+          <label for="website">Enter website Name</label>
+          <input type="text" id="website" />
+        </div>
+        <div class="inp-group">
+          <label for="website_addr">Enter website Address</label>
+          <input type="text" id="website_addr" />
+        </div>
+        <input type="submit" value="Add to List" />
+      </form>
+    </div>
+
+    <h2 id="added-bookmarks">Added Bookmarks:</h2>
+    <button id="clearAll">Clear All</button>
+    <!-- Section: List -->
+    <section id="list">
+      <div class="container" id="list-container">
+        <div class="container-inner">
+          
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

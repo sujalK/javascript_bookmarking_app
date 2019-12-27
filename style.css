@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+/* Core classes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.py-1 {
+  padding: 2rem 0;
+}
+
+body {
+  background: linear-gradient(to right, #feada6, #f5efef);
+  max-width: 1100px;
+  margin: auto;
+  font-family: "Dosis", sans-serif;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+}
+
+#added-bookmarks {
+  max-width: 500px;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#clearAll {
+    max-width: 500px;
+    display: block;
+    margin:auto;
+    width: 500px;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#clearAll:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.danger {
+  background: linear-gradient(#141e30, #243b55);
+  padding: 1rem 0;
+  color: #fff;
+  width: 45%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.success {
+  background: linear-gradient(#76b852, #8dc26f);
+  padding: 1rem 0;
+  color: #fff;
+  width: 45%;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+/* Header */
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#header h2 {
+  margin-bottom: 2rem;
+}
+
+#header .header-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.5rem;
+}
+
+#header #header-form .inp-group input {
+  padding: 1rem;
+  width: 500px;
+}
+
+#header #header-form .inp-group > label {
+  padding-bottom: 0.5rem;
+}
+
+#header #header-form > input {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#header #header-form input:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+#header #header-form .inp-group > * {
+  display: block;
+}
+
+#header #header-form > * {
+  padding-bottom: 1rem;
+}
+
+/* List */
+#list .container .container-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+#list .container .container-inner .a a {
+  display: block;
+}
+
+#list .container .container-inner .a > * {
+  padding: 0 0 1rem 0;
+}
+
+#list .container .container-inner .buttons-inner a,
+#list .container .container-inner .buttons-inner span {
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+#list .container .container-inner .buttons-inner > *:first-child {
+  background: linear-gradient(to right, #feada6, #f5efef);
+}
+
+#list .container .container-inner .buttons-inner > *:last-child {
+  background: linear-gradient(to right, #c73866, #ccc);
+}
+
+#list .container .container-inner .buttons-inner > *:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
